@@ -13,9 +13,7 @@ namespace VanityGenerator
     class Program
     {
         private static readonly Channel<(string, string)> Found = Channel.CreateUnbounded<(string, string)>();
-
-
-        static async Task Main(string[] args)
+        static void Main(string[] args)
         {
             var toMatch = new List<string>();
             while (true)
